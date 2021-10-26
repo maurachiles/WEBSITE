@@ -1,6 +1,6 @@
 ---
 title: "Maura Chiles"
-image: "Maura Chiles Photo.JPG"
+image: "Maura_Chiles_Photo.JPG"
 links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/maura-chiles-166674174/"
