@@ -1,0 +1,14 @@
+site: distill::distill_website
+---
+title: "Maura Chiles"
+image: "Maura Chiles Photo.JPG"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/maura-chiles-166674174/"
+  - label: GitHub
+    url: "https://github.com/maurachiles"
+output:
+  postcards::jolla
+---
+ 
+I am a graduate student at Mississippi State University pursuing a Master of Professional Accountancy. 

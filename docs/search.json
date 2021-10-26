@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-26T14:05:27-05:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Maura Chiles",
+      "author": [],
+      "contents": "\r\n\r\n          \r\n          \r\n          mfeo\r\n          \r\n          \r\n          Home\r\n          About\r\n          Maura\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Maura Chiles\r\n          \r\n          \r\n            \r\n              I am a graduate student at Mississippi State University pursuing a Master of Professional Accountancy.\r\n            \r\n            \r\n              I am a graduate student at Mississippi State University pursuing a Master of Professional Accountancy.\r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n                  \r\n                    \r\n                      LinkedIn\r\n                    \r\n                  \r\n                \r\n                                \r\n                  \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                \r\n                              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                                \r\n                  \r\n                    LinkedIn\r\n                  \r\n                \r\n                                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
+      "last_modified": "2021-10-26T14:05:27-05:00"
+    },
+    {
+      "path": "Maura.html",
+      "title": "Maura Chiles",
+      "author": [],
+      "contents": "\r\n\r\n          \r\n          \r\n          mfeo\r\n          \r\n          \r\n          Home\r\n          About\r\n          Maura\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Maura Chiles\r\n          \r\n          \r\n            \r\n              I am a graduate student at Mississippi State University pursuing a Master of Professional Accountancy.\r\n            \r\n            \r\n              I am a graduate student at Mississippi State University pursuing a Master of Professional Accountancy.\r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n                  \r\n                    \r\n                      LinkedIn\r\n                    \r\n                  \r\n                \r\n                                \r\n                  \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                \r\n                              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                                \r\n                  \r\n                    LinkedIn\r\n                  \r\n                \r\n                                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
+      "last_modified": "2021-10-26T14:05:29-05:00"
+    },
+    {
+      "path": "Resume.html",
+      "title": "Resume",
+      "description": "Maura Chiles",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-26T14:05:30-05:00"
+    }
+  ],
+  "collections": []
+}
