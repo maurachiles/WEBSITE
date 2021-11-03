@@ -1,9 +1,80 @@
 ---
 title: "Resume"
 description: "Maura Chiles"
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## **EDUCATION**
+
+### **Mississippi State University, Adkerson School of Accountancy**
+
+Master of Professional Accountancy, expected graduation May 2022
+
+Bachelor of Accountancy, May 2021
+
+
+## **WORK EXPERIENCE**
+
+### **Graduate Teaching Assistant**
+
+Mississippi State University, Adkersen School of Accountancy, June 2021 - present
+
+Assist in education and research operations throughout the accounting department
+
+* Aid professors in educational functions through class preparation, recording lectures, and proctoring exams
+
+* Help with professors' research through data collection
+
+
+### **Tax/Audit Intern**
+
+Dixon Hughes Goodman, Memphis, TN, January 2021 - March 2021
+
+Worked on both tax and audit engagements and gained hands-on experience and knowledge in preparing tax returns and conducting audits for various entities
+
+* Learned and operated newly introduced tax and audit software programs while adapting to fully virtual environment
+ 
+* Acquired a more thorough understanding of public accounting services
+
+
+### **Student Sales Worker**
+
+Mississippi State University, Mississippi Agricultural and Forestry Experiment Station Sales Store, May 2019 - May 2020
+
+Answered customer inquiries through extensive product knowledge and kept organization of shipping and order information
+
+* Exercised interpersonal skills through prompt customer service
+
+* Quickly learned and mastered company database system
+
+
+## **SKILLS**
+
+Microsoft Office
+
+R Studio
+
+
+## **ACTIVITIES AND INVOLVEMENT**
+
+### **Beta Alpha Psi,** August 2019 - May 2021
+
+* Gained exposure to both local and top accounting firms and their services 
+
+* Monthly tutoring to students in Financial and Managerial accounting classes
+
+### **United Nations Association,** September 2018 - December 2020
+
+Founding member
+
+Treasurer, April 2019 - May 2020
+
+* Spread advocacy and awareness of the UN's Sustainable Development Goals
+
+* Head of fundraising and account management
+
+
+
+
 

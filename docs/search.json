@@ -27,8 +27,9 @@
       "title": "Resume",
       "description": "Maura Chiles",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-26T15:05:46-05:00"
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nEDUCATION\r\nMississippi State University, Adkerson School of Accountancy\r\nMaster of Professional Accountancy, expected graduation May 2022\r\nBachelor of Accountancy, May 2021\r\nWORK EXPERIENCE\r\nGraduate Teaching Assistant\r\nMississippi State University, Adkersen School of Accountancy, June 2021 - present\r\nAssist in education and research operations throughout the accounting department\r\nAid professors in educational functions through class preparation, recording lectures, and proctoring exams\r\nHelp with professors’ research through data collection\r\nTax/Audit Intern\r\nDixon Hughes Goodman, Memphis, TN, January 2021 - March 2021\r\nWorked on both tax and audit engagements and gained hands-on experience and knowledge in preparing tax returns and conducting audits for various entities\r\nLearned and operated newly introduced tax and audit software programs while adapting to fully virtual environment\r\nAcquired a more thorough understanding of public accounting services\r\nStudent Sales Worker\r\nMississippi State University, Mississippi Agricultural and Forestry Experiment Station Sales Store, May 2019 - May 2020\r\nAnswered customer inquiries through extensive product knowledge and kept organization of shipping and order information\r\nExercised interpersonal skills through prompt customer service\r\nQuickly learned and mastered company database system\r\nSKILLS\r\nMicrosoft Office\r\nR Studio\r\nACTIVITIES AND INVOLVEMENT\r\nBeta Alpha Psi, August 2019 - May 2021\r\nGained exposure to both local and top accounting firms and their services\r\nMonthly tutoring to students in Financial and Managerial accounting classes\r\nUnited Nations Association, September 2018 - December 2020\r\nFounding member\r\nTreasurer, April 2019 - May 2020\r\nSpread advocacy and awareness of the UN’s Sustainable Development Goals\r\nHead of fundraising and account management\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-03T11:53:18-05:00"
     }
   ],
   "collections": []
