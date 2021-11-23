@@ -1,7 +1,6 @@
 name: "."
-title: "mfeo"
+title: "Maura Chiles"
 description: |
-  mfeo
 output_dir: "docs"
 navbar:
   right:
