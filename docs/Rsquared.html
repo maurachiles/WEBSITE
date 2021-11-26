@@ -86,29 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Maura Chiles: About this site</title>
-
-  <meta property="description" itemprop="description" content="Some additional details about the website"/>
+  <title>Maura Chiles: Problem with Rsquared</title>
 
 
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-11-25"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-11-25"/>
+  <meta name="article:author" content="Maura Chiles"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Maura Chiles: About this site"/>
+  <meta property="og:title" content="Maura Chiles: Problem with Rsquared"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the website"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Maura Chiles"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Maura Chiles: About this site"/>
-  <meta property="twitter:description" content="Some additional details about the website"/>
+  <meta property="twitter:title" content="Maura Chiles: Problem with Rsquared"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this site"]},{"type":"character","attributes":{},"value":["Some additional details about the website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Problem with Rsquared"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Maura Chiles"]}]}]},{"type":"character","attributes":{},"value":["2021-11-25"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2053,7 +2054,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this site","description":"Some additional details about the website","authors":[]}
+{"title":"Problem with Rsquared","authors":[{"author":"Maura Chiles","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-11-25T00:00:00.000-06:00","citationText":"Chiles, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2087,14 +2088,46 @@ Projects
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this site</h1>
+<h1>Problem with Rsquared</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the website</p></p>
+
 </div>
 
+<div class="d-byline">
+  
+  Maura Chiles
+  
+<br/>2021-11-25
+</div>
 
 <div class="d-article">
+<h2 id="problem-with-rsquared-as-a-model-fit-measure">Problem with Rsquared as a Model Fit Measure</h2>
+<p>Rsquared has been taught in many business classes as a good measure of model fit, or how well a variable relates to a result. I was taught this in business statistics classes, cost accounting, and an advanced managerial accounting course in my graduate studies. This is interesting because rsquared is not as great of a measure of model fit as it is taught to students.</p>
+<h2 id="lets-look-at-this-issue-further.">Let’s look at this issue further.</h2>
+<p><em>R-squared does not measure goodness of fit. It can be arbitrarily low when the model is completely correct.</em> By making<span class="math inline">\(σ^2\)</span> large, we drive R-squared towards 0, even when every assumption of the simple linear regression model is correct in every particular.</p>
+<p>What is <span class="math inline">\(σ^2\)</span>? When we perform linear regression, we assume our model almost predicts our dependent variable. The difference between “almost” and “exact” is assumed to be a draw from a Normal distribution with mean 0 and some variance we call <span class="math inline">\(σ^2\)</span>.</p>
+<p>This statement is easy enough to demonstrate. The way we do it here is to create a function that (1) generates data meeting the assumptions of simple linear regression (independent observations, normally distributed errors with constant variance), (2) fits a simple linear model to the data, and (3) reports the R-squared. Notice the only parameter for sake of simplicity is <code>sigma</code>. We then “apply” this function to a series of increasing <span class="math inline">\(σ\)</span> values and plot the results.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>r2.0</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>sig</span><span class='op'>)</span><span class='op'>{</span>
+  <span class='co'># our predictor</span>
+  <span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>10</span>,length.out <span class='op'>=</span> <span class='fl'>100</span><span class='op'>)</span>   
+  <span class='co'># our response; a function of x plus some random noise</span>
+  <span class='va'>y</span> <span class='op'>&lt;-</span> <span class='fl'>2</span> <span class='op'>+</span> <span class='fl'>1.2</span><span class='op'>*</span><span class='va'>x</span> <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span><span class='op'>(</span><span class='fl'>100</span>,<span class='fl'>0</span>,sd <span class='op'>=</span> <span class='va'>sig</span><span class='op'>)</span> 
+  <span class='co'># print the R-squared value</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>y</span> <span class='op'>~</span> <span class='va'>x</span><span class='op'>)</span><span class='op'>)</span><span class='op'>$</span><span class='va'>r.squared</span>          
+<span class='op'>}</span>
+<span class='va'>sigmas</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>0.5</span>,<span class='fl'>20</span>,length.out <span class='op'>=</span> <span class='fl'>20</span><span class='op'>)</span>
+ <span class='co'># apply our function to a series of sigma values</span>
+<span class='va'>rout</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>sapply</a></span><span class='op'>(</span><span class='va'>sigmas</span>, <span class='va'>r2.0</span><span class='op'>)</span>            
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>rout</span> <span class='op'>~</span> <span class='va'>sigmas</span>, type<span class='op'>=</span><span class='st'>"b"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="Rsquared_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
+</div>
+<p>R-squared tanks hard with increasing sigma, even though the model is <em>completely correct</em> in every respect.</p>
+<h2 id="a-solution-to-this-issue">A Solution to this Issue</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2103,6 +2136,15 @@ Projects
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
