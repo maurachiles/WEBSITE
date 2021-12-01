@@ -36,4 +36,13 @@ R-squared tanks hard with increasing sigma, even though the model is *completely
 
 ## A Solution to this Issue
 
+There are alternatives to using rsquared. One alternative is using the root mean square error (RMSE). RMSE can be used to measure the fit of a model by telling us how much the predictions differ from the dataset's actual values. 
 
+
+
+Citations:
+Rsquared
+https://data.library.virginia.edu/is-r-squared-useless/
+
+RMSE
+https://www.statisticshowto.com/probability-and-statistics/regression-analysis/rmse-root-mean-square-error/
