@@ -5,3 +5,53 @@ date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
 
+## Example of a Machine Learning Model: K-Nearest Neighbor
+
+K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and one has blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.
+
+# Illustration Predicting Flower Type
+
+This demonstration is used on Iris data, which is a dataset of 3 different species of flowers. 
+
+First, load the data.
+```{r, getdata, echo=TRUE, }
+library(caret)
+library (tidyverse)
+
+iris<-iris
+```
+
+
+Next, we split the data into training data and testing data. We are doing 75/25 split and k=5.
+
+```{r, model, echo=TRUE}
+trainIndex <- createDataPartition(iris$Species, p = .75, list = FALSE, times = 1)
+
+irisTrain <- iris[ trainIndex,]
+irisTest  <- iris[-trainIndex,]
+
+preProcValues <- preProcess(irisTrain, method = c("center", "scale"))
+trainTransformed <- predict(preProcValues, irisTrain)
+
+preProcValues <- preProcess(irisTest, method = c("center", "scale"))
+testTransformed <- predict(preProcValues, irisTest)
+
+knn_fit_Number1<-train(Species~Sepal.Length+Sepal.Width+Petal.Length+Petal.Width,
+               data=trainTransformed,
+               method="knn",
+               tuneGrid=data.frame(k=5))
+
+knn_fit_Number1
+```
+
+Next, we run a confusion matrix to view the accuracy of the model and the statistics by class.
+
+```{r, echo=TRUE}
+knn_pred_Number1<-predict(knn_fit_Number1,testTransformed)
+
+confusionMatrix(knn_pred_Number1,testTransformed$Species)
+```
+
+Explain results.
+
+How this can apply to accounting.
