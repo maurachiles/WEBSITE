@@ -7,13 +7,15 @@ output: distill::distill_article
 
 ## Example of a Machine Learning Model: K-Nearest Neighbor
 
-K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and one has blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.
+K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and two have blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.
 
 # Illustration Predicting Flower Type
 
 This demonstration is used on Iris data, which is a dataset of 3 different species of flowers. 
 
+
 First, load the data.
+
 ```{r, getdata, echo=TRUE, }
 library(caret)
 library (tidyverse)
@@ -21,6 +23,76 @@ library (tidyverse)
 iris<-iris
 ```
 
+```{r}
+set.seed(1)
+
+indxTrain <- createDataPartition(y = iris[, names(iris) == "Species"], p = 0.7, list = F)
+
+train <- iris[indxTrain,]
+
+train1<-train%>%
+  filter(Species=="setosa")%>% 
+  sample_n(10)
+train2<-train%>%
+  filter(Species=="versicolor")%>% 
+  sample_n(10)
+train3<-train%>%
+  filter(Species=="virginica")%>% 
+  sample_n(10)
+graph_train<-rbind(train1,train2,train3)
+
+test <- iris[-indxTrain,]
+
+graph_test<-test%>%
+  sample_n(1)
+
+```
+
+```{r, echo=FALSE}
+set.seed(1)
+
+indxTrain <- createDataPartition(y = iris[, names(iris) == "Species"], p = 0.7, list = F)
+
+train <- iris[indxTrain,]
+
+train1<-train%>%
+  filter(Species=="setosa")%>% 
+  sample_n(10)
+train2<-train%>%
+  filter(Species=="versicolor")%>% 
+  sample_n(10)
+train3<-train%>%
+  filter(Species=="virginica")%>% 
+  sample_n(10)
+graph_train<-rbind(train1,train2,train3)
+
+test <- iris[-indxTrain,]
+
+graph_test<-test%>%
+  sample_n(1)
+```
+
+```{r, graphtrain, echo=TRUE}
+ggplot(data=graph_train,mapping = aes(x=Petal.Length,y=Petal.Width,color=Species))+geom_point(alpha=0.5) + 
+   geom_point(data=graph_test, color="darkred", size=4) + theme(legend.title = element_blank())+ggtitle("Which are the closest 5 to the red dot?")+xlim(4.5,6)+ylim(1.5,2.5)+
+  theme(plot.title = element_text(hjust=0.5, size=10, face='bold'))
+```
+
+
+```{r, predictclass, echo=TRUE}
+knnModel <- train(Species ~.,
+                  data = graph_train,
+                  method = 'knn',
+                  preProcess = c("center","scale"),
+                  tuneGrid=data.frame(k=5))
+
+predictedclass<-predict(knnModel,graph_test)
+
+predictedclass
+```
+
+
+This graph visually shows how a data point's species will be predicted upon. The data point is closest in distance to versicolor and virginica, but closer to more virginica data points out of the 5 data points it is closest to.
 
 Next, we split the data into training data and testing data. We are doing 75/25 split and k=5.
 
@@ -52,6 +124,18 @@ knn_pred_Number1<-predict(knn_fit_Number1,testTransformed)
 confusionMatrix(knn_pred_Number1,testTransformed$Species)
 ```
 
-Explain results.
 
-How this can apply to accounting.
+The confusion matrix shows an accuracy of about 91%. The setosa class was always predicted correctly. The versicolor class was wrongly predicted as virginica twice. And the virginica class was wrongly predicted as versicolor once.
+
+##Applying to Accounting
+
+The K-Nearest Neighbor algorithm can also be applied to the accounting field. It can be used to predict earnings by examining histroical earnings patterns of similar firms. Easton et al. (2020) used KNN with variables of earnings before special items, equity market value at the end of the year, losses, accruals, and total assets and found their model to be more accurate than other algorithms such as random forest,random walk, and extant regeression models. 
+
+
+
+Citations: 
+Applying to Accounting - https://www.uts.edu.au/sites/default/files/2021-01/Forecasting%20Earnings%20Using%20k-Nearest%20Neighbor%20Matching.pdf
+
+Graph Code - https://professor-hunt.github.io/ACC8143/KNN.html
+
+
