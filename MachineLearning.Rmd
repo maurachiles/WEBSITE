@@ -7,7 +7,7 @@ output: distill::distill_article
 
 ## Example of a Machine Learning Model: K-Nearest Neighbor
 
-K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and two have blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.
+K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of six people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and two have blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.
 
 # Illustration Predicting Flower Type
 
