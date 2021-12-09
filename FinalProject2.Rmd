@@ -114,5 +114,6 @@ While this model does not perform the best, machine learning could be useful in 
 
 
 Further reading on Gradient Boosting:
+
 https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/
 
