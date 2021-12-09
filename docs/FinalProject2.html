@@ -2110,13 +2110,6 @@ Projects
 <p>This is data from a survey of 500 employees on whether they are satisfied in their position or not that I retrieved from Kaggle. The data contains variables of age, department, location, education, how they were recruited, awards they have received, and salary. I am going to predict satisfaction using gradient boosting.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/load.html'>load</a></span><span class='op'>(</span>file <span class='op'>=</span> <span class='st'>"EmpSatisfaction.rdata"</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code>Error in readChar(con, 5L, useBytes = TRUE): cannot open the connection</code></pre>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>psych</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/psych/man/describe.html'>describe</a></span><span class='op'>(</span><span class='va'>EmpSatisfaction</span><span class='op'>)</span>
 </code></pre>
 </div>
@@ -2248,8 +2241,9 @@ color<span class='op'>=</span><span class='st'>'skyblue'</span><span class='op'>
 </div>
 <p>This table and graph show which variables have the most impact on employee satisfaction in our model. Age is shown as having the highest impact, and in being in the sales department is shown as having the lowest impact.</p>
 <p>While this model does not perform the best, machine learning could be useful in assessing employee satisfaction. Another model could be used to better evaluate what variables contribute to greater satisfaction among employees. This can be useful to firms who want to boost their employees’ satisfaction with the organization in order to retain talent and foster a positive environment for employees.</p>
-<p>Further reading on Gradient Boosting: <a href="https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/" class="uri">https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/</a></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Further reading on Gradient Boosting:</p>
+<p><a href="https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/" class="uri">https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/</a></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

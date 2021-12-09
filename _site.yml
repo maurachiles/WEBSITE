@@ -14,7 +14,7 @@ navbar:
           href: Rsquared.html
         - text: "Machine Learning"
           href: MachineLearning.html
-        - text: "Final Project"
+        - text: "FinalProject2"
           href: FinalProject2.html
 output: distill::distill_article
 
