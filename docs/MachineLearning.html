@@ -2103,10 +2103,10 @@ Projects
 
 <div class="d-article">
 <h2 id="example-of-a-machine-learning-model-k-nearest-neighbor">Example of a Machine Learning Model: K-Nearest Neighbor</h2>
-<p>K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and one has blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.</p>
+<p>K-Nearest Neighbor is a machine learning algorithm that can be used to perform classification and regression tasks. This algorithm uses “k” number of data points that are near the predicted data point to predict a class or characteristic about the data point. The prediction will be whatever class or characteristic that the majority of the data points surrounding the predicted data point are. Picture a group of five people. K in this instance is 5. Assume it is known that three people in the group have brown hair, and two have blonde hair. When trying to predict the one that is not known, the algorithm will predict brown hair for the unknown because the majority of the unknown’s “neighbors” have brown hair.</p>
 <h1 id="illustration-predicting-flower-type">Illustration Predicting Flower Type</h1>
 <p>This demonstration is used on Iris data, which is a dataset of 3 different species of flowers.</p>
-First, load the data.
+<p>First, load the data.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/topepo/caret/'>caret</a></span><span class='op'>)</span>
@@ -2116,6 +2116,61 @@ First, load the data.
 </code></pre>
 </div>
 </div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span>
+
+<span class='va'>indxTrain</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/caret/man/createDataPartition.html'>createDataPartition</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='va'>iris</span><span class='op'>[</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>iris</span><span class='op'>)</span> <span class='op'>==</span> <span class='st'>"Species"</span><span class='op'>]</span>, p <span class='op'>=</span> <span class='fl'>0.7</span>, list <span class='op'>=</span> <span class='cn'>F</span><span class='op'>)</span>
+
+<span class='va'>train</span> <span class='op'>&lt;-</span> <span class='va'>iris</span><span class='op'>[</span><span class='va'>indxTrain</span>,<span class='op'>]</span>
+
+<span class='va'>train1</span><span class='op'>&lt;-</span><span class='va'>train</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span><span class='op'>==</span><span class='st'>"setosa"</span><span class='op'>)</span><span class='op'>%&gt;%</span> 
+  <span class='fu'>sample_n</span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>
+<span class='va'>train2</span><span class='op'>&lt;-</span><span class='va'>train</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span><span class='op'>==</span><span class='st'>"versicolor"</span><span class='op'>)</span><span class='op'>%&gt;%</span> 
+  <span class='fu'>sample_n</span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>
+<span class='va'>train3</span><span class='op'>&lt;-</span><span class='va'>train</span><span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span><span class='op'>==</span><span class='st'>"virginica"</span><span class='op'>)</span><span class='op'>%&gt;%</span> 
+  <span class='fu'>sample_n</span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>
+<span class='va'>graph_train</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='va'>train1</span>,<span class='va'>train2</span>,<span class='va'>train3</span><span class='op'>)</span>
+
+<span class='va'>test</span> <span class='op'>&lt;-</span> <span class='va'>iris</span><span class='op'>[</span><span class='op'>-</span><span class='va'>indxTrain</span>,<span class='op'>]</span>
+
+<span class='va'>graph_test</span><span class='op'>&lt;-</span><span class='va'>test</span><span class='op'>%&gt;%</span>
+  <span class='fu'>sample_n</span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>ggplot</span><span class='op'>(</span>data<span class='op'>=</span><span class='va'>graph_train</span>,mapping <span class='op'>=</span> <span class='fu'>aes</span><span class='op'>(</span>x<span class='op'>=</span><span class='va'>Petal.Length</span>,y<span class='op'>=</span><span class='va'>Petal.Width</span>,color<span class='op'>=</span><span class='va'>Species</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span><span class='fu'>geom_point</span><span class='op'>(</span>alpha<span class='op'>=</span><span class='fl'>0.5</span><span class='op'>)</span> <span class='op'>+</span> 
+   <span class='fu'>geom_point</span><span class='op'>(</span>data<span class='op'>=</span><span class='va'>graph_test</span>, color<span class='op'>=</span><span class='st'>"darkred"</span>, size<span class='op'>=</span><span class='fl'>4</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>theme</span><span class='op'>(</span>legend.title <span class='op'>=</span> <span class='fu'>element_blank</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span><span class='fu'>ggtitle</span><span class='op'>(</span><span class='st'>"Which are the closest 5 to the red dot?"</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>xlim</a></span><span class='op'>(</span><span class='fl'>4.5</span>,<span class='fl'>6</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>ylim</a></span><span class='op'>(</span><span class='fl'>1.5</span>,<span class='fl'>2.5</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'>element_text</span><span class='op'>(</span>hjust<span class='op'>=</span><span class='fl'>0.5</span>, size<span class='op'>=</span><span class='fl'>10</span>, face<span class='op'>=</span><span class='st'>'bold'</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="MachineLearning_files/figure-html5/graphtrain-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>knnModel</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/caret/man/train.html'>train</a></span><span class='op'>(</span><span class='va'>Species</span> <span class='op'>~</span><span class='va'>.</span>,
+                  data <span class='op'>=</span> <span class='va'>graph_train</span>,
+                  method <span class='op'>=</span> <span class='st'>'knn'</span>,
+                  preProcess <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"center"</span>,<span class='st'>"scale"</span><span class='op'>)</span>,
+                  tuneGrid<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>k<span class='op'>=</span><span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>predictedclass</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span><span class='op'>(</span><span class='va'>knnModel</span>,<span class='va'>graph_test</span><span class='op'>)</span>
+
+<span class='va'>predictedclass</span>
+</code></pre>
+</div>
+<pre><code>[1] virginica
+Levels: setosa versicolor virginica</code></pre>
+</div>
+<p>This graph visually shows how a data point’s species will be predicted upon. The data point is closest in distance to versicolor and virginica, but closer to more virginica data points out of the 5 data points it is closest to.</p>
 <p>Next, we split the data into training data and testing data. We are doing 75/25 split and k=5.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -2150,7 +2205,7 @@ Summary of sample sizes: 114, 114, 114, 114, 114, 114, ...
 Resampling results:
 
   Accuracy   Kappa    
-  0.9235219  0.8844365
+  0.9363113  0.9036662
 
 Tuning parameter &#39;k&#39; was held constant at a value of 5</code></pre>
 </div>
@@ -2167,35 +2222,38 @@ Tuning parameter &#39;k&#39; was held constant at a value of 5</code></pre>
             Reference
 Prediction   setosa versicolor virginica
   setosa         12          0         0
-  versicolor      0         11         0
-  virginica       0          1        12
+  versicolor      0         11         1
+  virginica       0          1        11
 
 Overall Statistics
                                           
-               Accuracy : 0.9722          
-                 95% CI : (0.8547, 0.9993)
+               Accuracy : 0.9444          
+                 95% CI : (0.8134, 0.9932)
     No Information Rate : 0.3333          
-    P-Value [Acc &gt; NIR] : 4.864e-16       
+    P-Value [Acc &gt; NIR] : 1.728e-14       
                                           
-                  Kappa : 0.9583          
+                  Kappa : 0.9167          
                                           
  Mcnemar&#39;s Test P-Value : NA              
 
 Statistics by Class:
 
                      Class: setosa Class: versicolor Class: virginica
-Sensitivity                 1.0000            0.9167           1.0000
-Specificity                 1.0000            1.0000           0.9583
-Pos Pred Value              1.0000            1.0000           0.9231
-Neg Pred Value              1.0000            0.9600           1.0000
+Sensitivity                 1.0000            0.9167           0.9167
+Specificity                 1.0000            0.9583           0.9583
+Pos Pred Value              1.0000            0.9167           0.9167
+Neg Pred Value              1.0000            0.9583           0.9583
 Prevalence                  0.3333            0.3333           0.3333
-Detection Rate              0.3333            0.3056           0.3333
-Detection Prevalence        0.3333            0.3056           0.3611
-Balanced Accuracy           1.0000            0.9583           0.9792</code></pre>
+Detection Rate              0.3333            0.3056           0.3056
+Detection Prevalence        0.3333            0.3333           0.3333
+Balanced Accuracy           1.0000            0.9375           0.9375</code></pre>
 </div>
-<p>Explain results.</p>
-<p>How this can apply to accounting.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>The confusion matrix shows an accuracy of about 91%. The setosa class was always predicted correctly. The versicolor class was wrongly predicted as virginica twice. And the virginica class was wrongly predicted as versicolor once.</p>
+<h2 id="applying-to-accounting">Applying to Accounting</h2>
+<p>The K-Nearest Neighbor algorithm can also be applied to the accounting field. It can be used to predict earnings by examining histroical earnings patterns of similar firms. Easton et al. (2020) used KNN with variables of earnings before special items, equity market value at the end of the year, losses, accruals, and total assets and found their model to be more accurate than other algorithms such as random forest,random walk, and extant regeression models.</p>
+<p>Citations: Applying to Accounting - <a href="https://www.uts.edu.au/sites/default/files/2021-01/Forecasting%20Earnings%20Using%20k-Nearest%20Neighbor%20Matching.pdf" class="uri">https://www.uts.edu.au/sites/default/files/2021-01/Forecasting%20Earnings%20Using%20k-Nearest%20Neighbor%20Matching.pdf</a></p>
+<p>Graph Code - <a href="https://professor-hunt.github.io/ACC8143/KNN.html" class="uri">https://professor-hunt.github.io/ACC8143/KNN.html</a></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

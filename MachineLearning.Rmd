@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+title: "Machine Learning: K-Nearest Neighbor"
 author: "Maura Chiles"
 date: "`r Sys.Date()`"
 output: distill::distill_article
@@ -12,7 +12,6 @@ K-Nearest Neighbor is a machine learning algorithm that can be used to perform c
 # Illustration Predicting Flower Type
 
 This demonstration is used on Iris data, which is a dataset of 3 different species of flowers. 
-
 
 First, load the data.
 
@@ -127,9 +126,11 @@ confusionMatrix(knn_pred_Number1,testTransformed$Species)
 
 The confusion matrix shows an accuracy of about 91%. The setosa class was always predicted correctly. The versicolor class was wrongly predicted as virginica twice. And the virginica class was wrongly predicted as versicolor once.
 
-##Applying to Accounting
+## Applying to Accounting
 
 The K-Nearest Neighbor algorithm can also be applied to the accounting field. It can be used to predict earnings by examining histroical earnings patterns of similar firms. Easton et al. (2020) used KNN with variables of earnings before special items, equity market value at the end of the year, losses, accruals, and total assets and found their model to be more accurate than other algorithms such as random forest,random walk, and extant regeression models. 
+
+
 
 
 
