@@ -106,3 +106,7 @@ coord_flip()
 This table and graph show which variables have the most impact on employee satisfaction in our model. Age is shown as having the highest impact, and in being in the sales department is shown as having the lowest impact.
 
 While this model does not perform the best, machine learning could be useful in assessing employee satisfaction. Another model could be used to better evaluate what variables contribute to greater satisfaction among employees. This can be useful to firms who want to boost their employees' satisfaction with the organization in order to retain talent and foster a positive environment for employees.
+
+
+Further reading on Gradient Boosting:
+https://www.displayr.com/gradient-boosting-the-coolest-kid-on-the-machine-learning-block/
