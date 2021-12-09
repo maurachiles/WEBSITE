@@ -41,8 +41,6 @@ There are alternatives to using rsquared. One alternative is using the root mean
 
 
 Citations:
-Rsquared
-https://data.library.virginia.edu/is-r-squared-useless/
+Rsquared - https://data.library.virginia.edu/is-r-squared-useless/
 
-RMSE
-https://www.statisticshowto.com/probability-and-statistics/regression-analysis/rmse-root-mean-square-error/
+RMSE - https://www.statisticshowto.com/probability-and-statistics/regression-analysis/rmse-root-mean-square-error/
