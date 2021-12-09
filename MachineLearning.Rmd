@@ -128,7 +128,7 @@ The confusion matrix shows an accuracy of about 91%. The setosa class was always
 
 ## Applying to Accounting
 
-The K-Nearest Neighbor algorithm can also be applied to the accounting field. It can be used to predict earnings by examining histroical earnings patterns of similar firms. Easton et al. (2020) used KNN with variables of earnings before special items, equity market value at the end of the year, losses, accruals, and total assets and found their model to be more accurate than other algorithms such as random forest,random walk, and extant regeression models. 
+The K-Nearest Neighbor algorithm can also be applied to the accounting field. It can be used to predict earnings for a firm by examining histroical earnings patterns of similar firms. Easton et al. (2020) used KNN with variables of earnings before special items, equity market value at the end of the year, losses, accruals, and total assets and found their model to be more accurate than other algorithms such as random forest,random walk, and extant regeression models. 
 
 
 
