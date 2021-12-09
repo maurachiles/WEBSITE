@@ -15,6 +15,9 @@ knitr::opts_chunk$set(error = TRUE)
 
 This is data from a survey of 500 employees on whether they are satisfied in their position or not that I retrieved from Kaggle. The data contains variables of age, department, location, education, how they were recruited, awards they have received, and salary. I am going to predict satisfaction using gradient boosting.
 
+```{r}
+EmpSatisfaction<-read.csv("EmpSatisfaction.csv")
+```
 
 ```{r, stats, echo=TRUE}
 psych::describe(EmpSatisfaction)
