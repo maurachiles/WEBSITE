@@ -1,0 +1,501 @@
+emp_id,age,Dept,location,education,recruitment_type,awards,salary,satisfied_binary,satisfied
+HR8270,28,HR,Suburb,PG,Referral,1,86750,1,yes
+TECH1860,50,Technology,Suburb,PG,Walk-in,2,42419,0,no
+TECH6390,43,Technology,Suburb,UG,Referral,2,65715,0,no
+SAL6191,44,Sales,City,PG,On-Campus,0,29805,1,yes
+HR6734,33,HR,City,UG,Recruitment Agency,5,29805,1,yes
+PUR7265,40,Purchasing,Suburb,UG,Referral,7,42419,1,yes
+PUR1466,26,Purchasing,Suburb,UG,Referral,2,86750,0,no
+TECH5426,25,Technology,City,UG,Recruitment Agency,4,24076,0,no
+HR6578,35,HR,City,PG,Referral,0,42419,1,yes
+TECH9322,45,Technology,City,PG,Referral,9,42419,0,no
+MKT2685,31,Marketing,City,UG,Walk-in,6,65715,1,yes
+TECH1769,43,Technology,Suburb,PG,Recruitment Agency,9,29805,1,yes
+TECH7949,28,Technology,City,UG,On-Campus,0,42419,0,no
+PUR3433,48,Purchasing,Suburb,PG,Referral,8,42419,1,yes
+PUR6311,52,Purchasing,City,PG,Recruitment Agency,7,86750,1,yes
+PUR6051,50,Purchasing,City,UG,Walk-in,6,86750,1,yes
+MKT7420,34,Marketing,City,PG,On-Campus,9,24076,0,no
+PUR2184,24,Purchasing,Suburb,UG,Recruitment Agency,6,65715,1,yes
+HR5555,54,HR,Suburb,PG,On-Campus,4,24076,1,yes
+SAL4385,25,Sales,City,UG,On-Campus,4,86750,1,yes
+HR7396,25,HR,Suburb,UG,On-Campus,4,29805,1,yes
+HR9666,50,HR,Suburb,PG,Referral,0,86750,1,yes
+PUR3558,34,Purchasing,City,PG,Referral,7,65715,1,yes
+SAL8849,37,Sales,City,UG,Walk-in,0,86750,1,yes
+SAL3047,31,Sales,Suburb,PG,Walk-in,3,65715,0,no
+SAL3747,53,Sales,Suburb,PG,Recruitment Agency,8,65715,0,no
+MKT1189,45,Marketing,Suburb,UG,Walk-in,8,65715,1,yes
+PUR3734,30,Purchasing,City,UG,On-Campus,4,65715,0,no
+SAL4005,33,Sales,City,PG,On-Campus,3,65715,0,no
+MKT5658,38,Marketing,Suburb,UG,Referral,2,29805,1,yes
+TECH2899,54,Technology,City,UG,On-Campus,2,24076,0,no
+TECH8734,48,Technology,City,UG,Recruitment Agency,4,42419,1,yes
+MKT2267,49,Marketing,Suburb,PG,On-Campus,9,24076,1,yes
+MKT2528,47,Marketing,Suburb,PG,On-Campus,0,65715,1,yes
+PUR4556,44,Purchasing,City,UG,Recruitment Agency,4,29805,1,yes
+PUR4890,26,Purchasing,City,PG,Walk-in,5,86750,1,yes
+TECH9838,50,Technology,Suburb,UG,Walk-in,6,29805,0,no
+SAL6393,23,Sales,City,PG,Recruitment Agency,8,65715,1,yes
+TECH9792,46,Technology,City,UG,Referral,2,29805,0,no
+SAL9433,29,Sales,Suburb,UG,On-Campus,1,29805,1,yes
+SAL8513,24,Sales,Suburb,PG,Recruitment Agency,2,65715,1,yes
+PUR3612,46,Purchasing,City,UG,On-Campus,8,29805,1,yes
+HR8041,50,HR,City,PG,Referral,6,42419,0,no
+HR7235,27,HR,City,PG,On-Campus,8,42419,1,yes
+MKT6486,29,Marketing,Suburb,UG,Recruitment Agency,1,29805,1,yes
+PUR8099,26,Purchasing,City,UG,On-Campus,4,86750,1,yes
+SAL1775,27,Sales,City,PG,Walk-in,3,65715,1,yes
+HR9226,46,HR,Suburb,UG,Referral,1,42419,0,no
+SAL4152,23,Sales,Suburb,UG,Referral,8,86750,1,yes
+HR2585,23,HR,City,UG,Referral,8,29805,0,no
+HR4943,37,HR,Suburb,UG,Recruitment Agency,5,86750,1,yes
+HR8555,42,HR,Suburb,UG,Referral,5,24076,0,no
+PUR4073,41,Purchasing,City,PG,Walk-in,7,42419,0,no
+TECH2021,51,Technology,Suburb,PG,Recruitment Agency,5,29805,1,yes
+SAL4843,32,Sales,Suburb,UG,Walk-in,0,65715,1,yes
+PUR8989,50,Purchasing,City,UG,On-Campus,3,29805,0,no
+PUR7873,40,Purchasing,Suburb,UG,On-Campus,6,65715,1,yes
+PUR6675,50,Purchasing,City,PG,On-Campus,1,29805,1,yes
+PUR1161,25,Purchasing,City,UG,On-Campus,8,86750,1,yes
+PUR5297,33,Purchasing,Suburb,PG,Walk-in,7,86750,0,no
+MKT1995,37,Marketing,Suburb,PG,Recruitment Agency,7,86750,1,yes
+SAL8629,53,Sales,Suburb,PG,Recruitment Agency,6,24076,1,yes
+PUR2016,49,Purchasing,City,UG,Referral,3,65715,1,yes
+SAL8869,52,Sales,Suburb,PG,Walk-in,1,86750,0,no
+MKT7439,33,Marketing,City,UG,On-Campus,2,24076,1,yes
+MKT8892,39,Marketing,Suburb,PG,Walk-in,5,65715,0,no
+SAL7863,39,Sales,Suburb,UG,Referral,4,29805,1,yes
+HR8916,28,HR,Suburb,PG,Referral,7,24076,0,no
+TECH9529,54,Technology,City,UG,Walk-in,5,42419,1,yes
+HR1878,27,HR,Suburb,PG,Walk-in,5,24076,1,yes
+HR5887,30,HR,Suburb,UG,Walk-in,0,24076,0,no
+HR5859,24,HR,City,UG,Recruitment Agency,3,65715,0,no
+PUR7331,38,Purchasing,City,UG,On-Campus,4,29805,0,no
+MKT9571,42,Marketing,Suburb,UG,Walk-in,2,42419,1,yes
+HR9684,46,HR,Suburb,PG,Walk-in,8,86750,1,yes
+MKT8208,34,Marketing,Suburb,PG,Walk-in,0,86750,1,yes
+SAL6276,28,Sales,City,UG,Referral,5,24076,1,yes
+TECH3062,23,Technology,City,PG,Referral,5,65715,0,no
+SAL1064,53,Sales,City,UG,Recruitment Agency,9,65715,1,yes
+SAL9006,26,Sales,City,UG,On-Campus,4,86750,1,yes
+PUR3568,39,Purchasing,Suburb,PG,Recruitment Agency,4,42419,1,yes
+TECH6463,35,Technology,City,UG,On-Campus,9,29805,1,yes
+SAL3027,40,Sales,City,UG,Referral,4,42419,1,yes
+SAL3695,27,Sales,City,PG,Referral,5,29805,1,yes
+TECH6258,52,Technology,Suburb,UG,Referral,7,86750,1,yes
+TECH6618,46,Technology,Suburb,UG,Recruitment Agency,1,29805,0,no
+SAL7736,46,Sales,City,UG,Walk-in,5,65715,1,yes
+TECH1391,49,Technology,City,UG,Walk-in,0,24076,1,yes
+SAL6892,25,Sales,Suburb,PG,Referral,3,24076,1,yes
+SAL4561,33,Sales,Suburb,PG,Walk-in,9,86750,1,yes
+PUR7184,35,Purchasing,Suburb,PG,Walk-in,2,65715,0,no
+HR4099,26,HR,Suburb,UG,Recruitment Agency,8,42419,0,no
+SAL7278,48,Sales,Suburb,UG,On-Campus,2,65715,0,no
+MKT9392,49,Marketing,Suburb,PG,Referral,5,24076,0,no
+HR4104,36,HR,Suburb,UG,Referral,0,24076,0,no
+HR8215,44,HR,Suburb,UG,Recruitment Agency,5,65715,0,no
+HR3454,33,HR,City,UG,Recruitment Agency,3,65715,1,yes
+PUR9996,54,Purchasing,City,UG,Walk-in,7,24076,0,no
+SAL3731,49,Sales,City,PG,Referral,8,42419,0,no
+PUR9154,32,Purchasing,City,PG,On-Campus,3,86750,1,yes
+SAL6056,41,Sales,City,PG,Recruitment Agency,9,86750,0,no
+PUR9110,40,Purchasing,City,UG,On-Campus,9,65715,1,yes
+PUR4840,28,Purchasing,Suburb,PG,On-Campus,5,86750,1,yes
+MKT2028,49,Marketing,Suburb,PG,Referral,0,24076,0,no
+PUR8385,51,Purchasing,City,UG,Referral,3,24076,1,yes
+TECH1502,37,Technology,City,UG,Recruitment Agency,6,65715,0,no
+MKT7910,43,Marketing,Suburb,PG,Referral,0,65715,0,no
+PUR7938,52,Purchasing,Suburb,PG,Referral,7,65715,1,yes
+HR5488,32,HR,Suburb,PG,Referral,9,42419,1,yes
+TECH1206,27,Technology,City,PG,On-Campus,5,86750,0,no
+TECH6134,48,Technology,Suburb,UG,Recruitment Agency,4,65715,1,yes
+TECH6977,51,Technology,City,PG,Walk-in,9,29805,1,yes
+MKT8721,27,Marketing,City,PG,On-Campus,8,29805,0,no
+PUR8035,32,Purchasing,Suburb,UG,Referral,1,24076,0,no
+PUR2484,50,Purchasing,Suburb,PG,On-Campus,4,86750,1,yes
+HR8858,27,HR,City,UG,Referral,5,65715,0,no
+HR1863,25,HR,Suburb,UG,Referral,6,29805,0,no
+TECH3790,45,Technology,Suburb,UG,On-Campus,4,86750,0,no
+HR8408,28,HR,City,PG,Recruitment Agency,8,24076,0,no
+MKT9755,26,Marketing,Suburb,PG,Referral,0,42419,0,no
+PUR6116,40,Purchasing,City,UG,Recruitment Agency,6,86750,0,no
+TECH7019,50,Technology,City,PG,Walk-in,9,86750,0,no
+HR2757,31,HR,Suburb,PG,Referral,6,42419,1,yes
+MKT8574,39,Marketing,City,UG,Recruitment Agency,3,86750,0,no
+MKT7374,51,Marketing,City,UG,Recruitment Agency,8,24076,1,yes
+HR7892,35,HR,Suburb,PG,Walk-in,4,24076,1,yes
+PUR2678,49,Purchasing,Suburb,UG,Recruitment Agency,3,42419,1,yes
+HR4242,37,HR,Suburb,PG,Recruitment Agency,6,65715,0,no
+TECH5636,52,Technology,City,PG,Walk-in,3,29805,0,no
+HR2059,42,HR,City,PG,Referral,2,65715,1,yes
+MKT7668,39,Marketing,Suburb,PG,Recruitment Agency,8,86750,0,no
+HR4157,35,HR,City,UG,Recruitment Agency,7,29805,1,yes
+PUR6915,54,Purchasing,Suburb,UG,Recruitment Agency,0,42419,0,no
+SAL3693,38,Sales,Suburb,UG,On-Campus,6,42419,0,no
+HR4627,44,HR,City,UG,Walk-in,8,29805,1,yes
+PUR6450,26,Purchasing,Suburb,PG,On-Campus,7,24076,1,yes
+PUR2663,27,Purchasing,City,PG,Walk-in,7,29805,1,yes
+MKT6592,27,Marketing,City,UG,Referral,5,86750,0,no
+PUR8392,31,Purchasing,Suburb,PG,Referral,3,24076,1,yes
+PUR2306,39,Purchasing,City,PG,Recruitment Agency,7,42419,0,no
+PUR7776,35,Purchasing,Suburb,PG,Walk-in,2,29805,0,no
+PUR6864,24,Purchasing,City,UG,Referral,8,65715,0,no
+TECH8526,35,Technology,City,UG,Walk-in,1,65715,1,yes
+TECH9901,44,Technology,City,UG,Referral,1,86750,1,yes
+MKT6575,43,Marketing,Suburb,PG,On-Campus,6,65715,1,yes
+HR6530,49,HR,City,UG,Referral,9,29805,0,no
+PUR5413,45,Purchasing,Suburb,UG,On-Campus,3,29805,0,no
+HR4748,41,HR,City,UG,Referral,9,65715,1,yes
+HR1663,25,HR,City,UG,Recruitment Agency,7,29805,0,no
+MKT2998,32,Marketing,Suburb,UG,On-Campus,8,86750,0,no
+PUR8994,24,Purchasing,Suburb,UG,Referral,6,24076,1,yes
+PUR2495,54,Purchasing,Suburb,PG,Recruitment Agency,4,86750,1,yes
+SAL4304,35,Sales,Suburb,PG,On-Campus,7,86750,1,yes
+HR4763,41,HR,Suburb,UG,Recruitment Agency,3,29805,0,no
+HR6232,48,HR,City,UG,Walk-in,1,24076,0,no
+TECH2853,39,Technology,City,PG,Walk-in,5,29805,0,no
+SAL7585,43,Sales,Suburb,PG,On-Campus,8,42419,0,no
+TECH2291,36,Technology,City,UG,Referral,0,29805,0,no
+TECH4581,53,Technology,City,UG,On-Campus,9,29805,1,yes
+TECH8554,34,Technology,City,UG,Recruitment Agency,6,29805,0,no
+MKT8280,43,Marketing,Suburb,UG,Referral,9,24076,0,no
+MKT2636,34,Marketing,City,PG,Walk-in,8,29805,0,no
+TECH4696,33,Technology,City,UG,Referral,9,24076,1,yes
+SAL1698,29,Sales,City,UG,Walk-in,8,65715,1,yes
+HR5737,26,HR,Suburb,UG,Referral,9,42419,1,yes
+SAL1854,41,Sales,City,UG,Referral,2,24076,0,no
+PUR9164,23,Purchasing,City,PG,Referral,4,65715,1,yes
+MKT6855,50,Marketing,Suburb,PG,Recruitment Agency,7,24076,1,yes
+HR8392,53,HR,Suburb,PG,Recruitment Agency,7,24076,1,yes
+HR7528,46,HR,City,UG,On-Campus,3,42419,0,no
+PUR6249,51,Purchasing,City,UG,On-Campus,0,86750,1,yes
+PUR6172,25,Purchasing,Suburb,PG,Walk-in,0,86750,0,no
+TECH2707,35,Technology,Suburb,UG,Recruitment Agency,3,24076,0,no
+MKT6791,37,Marketing,Suburb,UG,Walk-in,5,29805,1,yes
+MKT6535,24,Marketing,Suburb,PG,On-Campus,7,65715,0,no
+SAL5931,33,Sales,Suburb,PG,Walk-in,5,29805,1,yes
+TECH4510,26,Technology,Suburb,PG,On-Campus,8,29805,0,no
+TECH1202,41,Technology,Suburb,PG,Recruitment Agency,8,24076,1,yes
+TECH5218,51,Technology,City,UG,Referral,1,24076,1,yes
+TECH9958,39,Technology,Suburb,UG,Recruitment Agency,9,24076,1,yes
+MKT5389,25,Marketing,Suburb,PG,Walk-in,0,24076,0,no
+MKT3327,50,Marketing,City,UG,Walk-in,1,86750,1,yes
+TECH9004,40,Technology,Suburb,PG,Recruitment Agency,4,24076,0,no
+SAL3931,30,Sales,Suburb,PG,Recruitment Agency,3,86750,1,yes
+HR8777,44,HR,City,UG,On-Campus,3,86750,0,no
+HR1197,47,HR,Suburb,PG,Walk-in,8,24076,0,no
+SAL8125,46,Sales,City,UG,Walk-in,7,42419,1,yes
+TECH2930,48,Technology,City,UG,Recruitment Agency,5,65715,1,yes
+MKT7287,41,Marketing,City,UG,Referral,0,29805,1,yes
+HR9800,27,HR,City,UG,Walk-in,1,86750,1,yes
+PUR5282,29,Purchasing,Suburb,PG,Referral,5,65715,1,yes
+PUR3511,43,Purchasing,City,UG,Recruitment Agency,1,42419,0,no
+SAL1659,30,Sales,City,PG,Recruitment Agency,9,29805,1,yes
+TECH3811,50,Technology,Suburb,PG,On-Campus,4,29805,1,yes
+HR8098,27,HR,City,PG,Walk-in,4,86750,0,no
+TECH7546,39,Technology,City,PG,Referral,5,24076,1,yes
+HR2986,27,HR,City,UG,On-Campus,5,42419,1,yes
+SAL9338,26,Sales,City,UG,Walk-in,5,86750,0,no
+SAL3911,44,Sales,Suburb,PG,On-Campus,1,42419,1,yes
+PUR2734,41,Purchasing,City,PG,Recruitment Agency,9,24076,1,yes
+TECH2843,53,Technology,Suburb,UG,Walk-in,2,24076,1,yes
+PUR9680,54,Purchasing,Suburb,PG,On-Campus,5,86750,0,no
+TECH3976,49,Technology,City,UG,On-Campus,7,24076,1,yes
+PUR2959,43,Purchasing,City,PG,Referral,0,65715,0,no
+MKT6759,24,Marketing,City,UG,On-Campus,0,29805,1,yes
+MKT7694,33,Marketing,City,PG,Walk-in,1,86750,0,no
+MKT3385,44,Marketing,Suburb,PG,Walk-in,5,42419,1,yes
+MKT5736,35,Marketing,Suburb,UG,Referral,8,65715,0,no
+HR2802,37,HR,Suburb,PG,Walk-in,3,86750,0,no
+MKT9155,34,Marketing,City,PG,Recruitment Agency,2,24076,0,no
+SAL9120,44,Sales,Suburb,UG,Walk-in,7,24076,0,no
+SAL7616,43,Sales,City,PG,Walk-in,9,24076,0,no
+HR6534,44,HR,City,UG,On-Campus,8,24076,0,no
+MKT5061,33,Marketing,City,UG,On-Campus,4,42419,1,yes
+MKT1262,29,Marketing,City,PG,Walk-in,8,65715,1,yes
+MKT7287,50,Marketing,City,PG,Referral,1,29805,0,no
+PUR9815,27,Purchasing,Suburb,PG,On-Campus,2,42419,0,no
+TECH3049,39,Technology,Suburb,PG,Referral,6,42419,0,no
+PUR6423,46,Purchasing,City,PG,Walk-in,6,29805,0,no
+TECH5548,42,Technology,Suburb,PG,Walk-in,5,29805,1,yes
+MKT4108,31,Marketing,City,PG,Recruitment Agency,5,24076,0,no
+MKT8158,36,Marketing,City,UG,On-Campus,1,42419,1,yes
+PUR8400,48,Purchasing,City,PG,Walk-in,9,86750,1,yes
+PUR4170,34,Purchasing,Suburb,UG,Recruitment Agency,5,29805,0,no
+TECH3255,28,Technology,City,PG,On-Campus,3,29805,0,no
+SAL2154,39,Sales,City,PG,Walk-in,2,65715,1,yes
+TECH5499,41,Technology,Suburb,UG,Walk-in,1,86750,1,yes
+PUR7295,41,Purchasing,Suburb,PG,On-Campus,0,86750,0,no
+PUR7197,48,Purchasing,Suburb,PG,On-Campus,4,29805,0,no
+HR2648,38,HR,City,UG,On-Campus,1,24076,0,no
+PUR6539,34,Purchasing,City,PG,Walk-in,1,65715,1,yes
+HR5199,34,HR,Suburb,PG,Walk-in,6,86750,1,yes
+SAL9445,42,Sales,City,PG,Recruitment Agency,7,29805,0,no
+TECH3557,54,Technology,Suburb,UG,Referral,9,86750,1,yes
+TECH6592,28,Technology,Suburb,PG,On-Campus,7,65715,1,yes
+HR1098,53,HR,City,PG,Walk-in,3,65715,0,no
+TECH3200,45,Technology,City,PG,Walk-in,0,42419,0,no
+PUR3961,48,Purchasing,Suburb,PG,On-Campus,6,29805,1,yes
+MKT5973,26,Marketing,Suburb,UG,Referral,0,65715,1,yes
+HR5433,28,HR,Suburb,UG,On-Campus,3,42419,0,no
+TECH3869,33,Technology,Suburb,PG,Referral,7,42419,0,no
+HR1956,23,HR,City,PG,Walk-in,1,86750,0,no
+HR9352,52,HR,Suburb,UG,Referral,5,86750,0,no
+MKT6699,46,Marketing,Suburb,UG,Recruitment Agency,5,42419,0,no
+PUR7944,45,Purchasing,Suburb,PG,Walk-in,8,86750,1,yes
+HR5493,37,HR,City,UG,Recruitment Agency,4,65715,1,yes
+TECH5911,49,Technology,City,PG,On-Campus,9,24076,1,yes
+SAL4987,33,Sales,Suburb,UG,On-Campus,3,65715,1,yes
+HR7015,54,HR,City,UG,On-Campus,4,42419,0,no
+HR2218,47,HR,City,UG,Referral,9,42419,0,no
+MKT5496,41,Marketing,City,UG,Walk-in,4,65715,0,no
+PUR5735,40,Purchasing,Suburb,PG,On-Campus,7,86750,1,yes
+SAL5555,39,Sales,Suburb,UG,On-Campus,9,86750,1,yes
+TECH9050,41,Technology,City,UG,Walk-in,7,42419,1,yes
+SAL4446,43,Sales,Suburb,PG,On-Campus,1,29805,0,no
+TECH2045,36,Technology,Suburb,UG,Recruitment Agency,6,86750,1,yes
+PUR7893,49,Purchasing,City,UG,Walk-in,7,65715,0,no
+TECH2693,40,Technology,City,PG,Walk-in,5,86750,0,no
+MKT4436,50,Marketing,Suburb,UG,Walk-in,4,65715,0,no
+MKT9754,41,Marketing,City,PG,Recruitment Agency,8,42419,0,no
+MKT6895,37,Marketing,Suburb,PG,Walk-in,2,86750,0,no
+MKT4354,53,Marketing,Suburb,PG,Recruitment Agency,9,65715,0,no
+SAL1225,37,Sales,City,PG,Walk-in,3,42419,1,yes
+PUR5893,26,Purchasing,Suburb,UG,Referral,8,29805,0,no
+TECH8022,29,Technology,Suburb,PG,On-Campus,5,65715,0,no
+TECH6600,35,Technology,City,UG,Referral,7,29805,1,yes
+MKT8996,25,Marketing,City,UG,On-Campus,6,29805,0,no
+MKT8683,38,Marketing,City,UG,Recruitment Agency,1,24076,1,yes
+HR5642,53,HR,Suburb,UG,Referral,2,86750,1,yes
+PUR8679,31,Purchasing,City,UG,Walk-in,0,65715,1,yes
+SAL9208,30,Sales,City,UG,On-Campus,8,29805,0,no
+TECH8339,42,Technology,City,UG,On-Campus,6,24076,0,no
+HR3205,35,HR,City,UG,Referral,0,42419,1,yes
+HR2069,39,HR,Suburb,UG,Recruitment Agency,2,65715,0,no
+TECH4444,39,Technology,Suburb,UG,Referral,3,29805,0,no
+SAL2060,39,Sales,City,PG,Recruitment Agency,3,86750,1,yes
+HR3327,23,HR,Suburb,PG,Recruitment Agency,4,24076,1,yes
+HR4420,54,HR,City,PG,On-Campus,2,29805,0,no
+PUR1301,30,Purchasing,City,UG,Referral,2,86750,1,yes
+SAL1606,41,Sales,Suburb,PG,Referral,0,29805,1,yes
+HR4170,53,HR,Suburb,PG,Recruitment Agency,6,65715,1,yes
+SAL1699,28,Sales,City,PG,Referral,9,65715,0,no
+TECH6088,25,Technology,City,UG,Walk-in,0,65715,0,no
+MKT1190,49,Marketing,Suburb,UG,Walk-in,1,24076,0,no
+HR1980,27,HR,City,UG,Referral,3,65715,1,yes
+PUR3975,35,Purchasing,Suburb,UG,Referral,3,86750,0,no
+TECH7102,37,Technology,City,PG,Recruitment Agency,4,29805,1,yes
+SAL2184,36,Sales,City,PG,Walk-in,1,42419,0,no
+TECH4327,51,Technology,Suburb,PG,Walk-in,3,86750,0,no
+HR4394,53,HR,Suburb,PG,On-Campus,0,86750,1,yes
+SAL9319,45,Sales,Suburb,UG,Recruitment Agency,1,65715,0,no
+MKT2816,38,Marketing,Suburb,UG,On-Campus,0,24076,1,yes
+TECH6854,40,Technology,Suburb,UG,Walk-in,9,29805,0,no
+HR7709,54,HR,Suburb,PG,Recruitment Agency,9,24076,0,no
+PUR1569,44,Purchasing,Suburb,UG,Referral,3,29805,1,yes
+SAL6442,51,Sales,City,UG,Recruitment Agency,3,29805,1,yes
+TECH2895,44,Technology,City,PG,Referral,6,24076,1,yes
+TECH3733,33,Technology,City,PG,Referral,9,86750,0,no
+MKT4863,25,Marketing,Suburb,UG,Recruitment Agency,8,29805,0,no
+MKT8455,44,Marketing,Suburb,UG,Referral,8,24076,0,no
+PUR5014,32,Purchasing,Suburb,UG,On-Campus,4,29805,1,yes
+PUR2686,32,Purchasing,City,UG,Walk-in,9,42419,1,yes
+HR4009,54,HR,Suburb,UG,Referral,0,86750,1,yes
+HR8806,52,HR,Suburb,UG,On-Campus,0,65715,0,no
+PUR1154,43,Purchasing,City,PG,Referral,5,29805,0,no
+PUR2409,38,Purchasing,Suburb,PG,Walk-in,1,42419,1,yes
+SAL1784,34,Sales,City,PG,On-Campus,7,65715,0,no
+MKT9096,24,Marketing,City,UG,Walk-in,8,65715,1,yes
+HR8560,31,HR,Suburb,PG,Walk-in,3,29805,0,no
+MKT8343,46,Marketing,Suburb,UG,On-Campus,4,24076,0,no
+MKT8206,25,Marketing,Suburb,UG,On-Campus,7,29805,1,yes
+PUR6596,46,Purchasing,City,PG,On-Campus,2,42419,0,no
+SAL6801,52,Sales,City,UG,Recruitment Agency,4,65715,0,no
+TECH3806,47,Technology,City,UG,On-Campus,2,29805,1,yes
+SAL1537,52,Sales,Suburb,PG,On-Campus,9,24076,1,yes
+SAL6986,37,Sales,Suburb,PG,On-Campus,2,29805,0,no
+MKT2841,25,Marketing,Suburb,PG,On-Campus,2,86750,1,yes
+SAL9716,41,Sales,Suburb,UG,Referral,6,24076,0,no
+HR7971,40,HR,City,PG,Recruitment Agency,6,42419,1,yes
+MKT6625,30,Marketing,City,PG,Walk-in,6,65715,0,no
+HR3950,48,HR,City,UG,On-Campus,9,29805,0,no
+TECH8992,39,Technology,City,PG,Referral,7,24076,1,yes
+MKT5780,30,Marketing,Suburb,PG,Referral,4,86750,0,no
+TECH3368,29,Technology,Suburb,PG,Referral,4,24076,0,no
+MKT7655,52,Marketing,Suburb,UG,Walk-in,3,86750,1,yes
+PUR9173,29,Purchasing,City,UG,On-Campus,6,42419,1,yes
+SAL5495,25,Sales,City,UG,Recruitment Agency,9,65715,0,no
+PUR7002,23,Purchasing,Suburb,UG,Recruitment Agency,3,42419,1,yes
+TECH7614,26,Technology,Suburb,PG,Referral,1,29805,1,yes
+SAL6919,47,Sales,City,UG,Walk-in,3,24076,0,no
+MKT1853,27,Marketing,Suburb,UG,Walk-in,7,86750,0,no
+SAL5146,23,Sales,City,PG,Walk-in,8,86750,1,yes
+HR4769,37,HR,City,PG,Recruitment Agency,2,24076,1,yes
+SAL1574,27,Sales,City,PG,Referral,6,24076,1,yes
+HR2148,35,HR,Suburb,UG,On-Campus,8,29805,0,no
+SAL7293,30,Sales,Suburb,UG,Recruitment Agency,3,42419,0,no
+HR7457,30,HR,City,UG,Referral,9,86750,0,no
+TECH8509,27,Technology,Suburb,PG,Referral,2,29805,0,no
+PUR5777,50,Purchasing,City,PG,On-Campus,4,42419,0,no
+MKT4854,54,Marketing,City,UG,On-Campus,0,29805,0,no
+SAL3491,31,Sales,City,PG,On-Campus,2,86750,0,no
+PUR4124,53,Purchasing,City,PG,Walk-in,7,24076,1,yes
+MKT6691,23,Marketing,Suburb,PG,On-Campus,7,24076,1,yes
+MKT4051,26,Marketing,City,UG,Referral,3,42419,0,no
+HR1004,25,HR,City,PG,On-Campus,1,65715,0,no
+TECH6222,24,Technology,Suburb,PG,Referral,7,42419,0,no
+TECH6315,53,Technology,City,UG,Recruitment Agency,7,65715,1,yes
+PUR5869,30,Purchasing,City,UG,Walk-in,9,29805,0,no
+TECH1876,45,Technology,Suburb,PG,Recruitment Agency,3,29805,1,yes
+SAL8027,31,Sales,Suburb,PG,Recruitment Agency,2,86750,1,yes
+TECH5142,24,Technology,Suburb,UG,Referral,1,65715,1,yes
+PUR7966,36,Purchasing,City,UG,Recruitment Agency,8,86750,1,yes
+TECH8079,36,Technology,Suburb,PG,Referral,0,24076,1,yes
+SAL8987,54,Sales,Suburb,PG,On-Campus,6,65715,0,no
+HR7799,26,HR,City,PG,On-Campus,4,42419,0,no
+PUR5465,52,Purchasing,City,PG,Referral,7,24076,1,yes
+HR1635,53,HR,City,UG,On-Campus,3,24076,0,no
+HR2693,28,HR,City,PG,Walk-in,6,42419,1,yes
+HR5752,33,HR,City,PG,Recruitment Agency,4,24076,1,yes
+MKT9311,25,Marketing,Suburb,UG,Walk-in,4,65715,0,no
+MKT1830,30,Marketing,Suburb,PG,Recruitment Agency,8,86750,0,no
+HR6177,25,HR,Suburb,UG,On-Campus,8,24076,0,no
+PUR9932,36,Purchasing,City,PG,Walk-in,8,65715,0,no
+SAL9308,50,Sales,City,PG,On-Campus,5,29805,0,no
+SAL6949,35,Sales,City,UG,Recruitment Agency,5,65715,1,yes
+TECH3838,35,Technology,Suburb,UG,Referral,4,86750,0,no
+PUR2150,54,Purchasing,Suburb,PG,Referral,8,65715,0,no
+MKT8560,24,Marketing,City,PG,Walk-in,9,42419,0,no
+HR2931,35,HR,Suburb,PG,On-Campus,7,86750,1,yes
+TECH2664,51,Technology,City,UG,On-Campus,6,29805,0,no
+SAL2081,41,Sales,Suburb,PG,Walk-in,6,42419,1,yes
+MKT1512,49,Marketing,Suburb,UG,Referral,5,65715,0,no
+MKT8805,28,Marketing,Suburb,UG,Recruitment Agency,4,86750,0,no
+HR6237,38,HR,City,PG,Walk-in,3,29805,1,yes
+SAL1559,24,Sales,Suburb,UG,Recruitment Agency,2,42419,0,no
+PUR4672,30,Purchasing,Suburb,PG,Referral,2,29805,0,no
+MKT8404,39,Marketing,City,PG,On-Campus,5,65715,1,yes
+HR4343,45,HR,Suburb,PG,Referral,3,29805,0,no
+PUR5070,24,Purchasing,City,PG,Walk-in,5,24076,1,yes
+SAL1580,32,Sales,City,PG,On-Campus,2,42419,1,yes
+MKT8004,50,Marketing,City,UG,Walk-in,3,29805,1,yes
+PUR9130,38,Purchasing,City,UG,Walk-in,8,65715,1,yes
+PUR4147,28,Purchasing,City,PG,Referral,4,65715,1,yes
+PUR5249,50,Purchasing,Suburb,PG,Walk-in,6,29805,0,no
+MKT2679,24,Marketing,City,UG,Referral,9,65715,0,no
+MKT4506,24,Marketing,City,UG,On-Campus,1,86750,0,no
+TECH8253,48,Technology,City,UG,Referral,4,86750,1,yes
+SAL3744,35,Sales,City,UG,On-Campus,8,86750,1,yes
+HR6188,46,HR,Suburb,PG,Referral,2,24076,1,yes
+PUR3141,37,Purchasing,City,PG,Recruitment Agency,8,29805,1,yes
+TECH7617,53,Technology,Suburb,UG,Recruitment Agency,5,24076,0,no
+HR3479,50,HR,City,PG,Walk-in,3,65715,0,no
+TECH7484,24,Technology,Suburb,UG,Referral,6,24076,1,yes
+MKT8421,29,Marketing,City,PG,Referral,7,65715,1,yes
+PUR5452,25,Purchasing,City,UG,On-Campus,5,65715,0,no
+HR6881,30,HR,Suburb,PG,Walk-in,4,42419,1,yes
+HR7665,45,HR,City,UG,Referral,5,86750,1,yes
+HR3849,36,HR,Suburb,UG,Walk-in,4,65715,1,yes
+HR8390,46,HR,City,PG,Recruitment Agency,7,42419,0,no
+HR7905,52,HR,Suburb,UG,Referral,0,86750,0,no
+TECH3489,45,Technology,City,PG,Referral,6,65715,1,yes
+PUR5611,49,Purchasing,City,PG,Walk-in,9,65715,0,no
+MKT3839,44,Marketing,Suburb,UG,Referral,9,24076,1,yes
+MKT9527,51,Marketing,City,PG,Walk-in,1,24076,1,yes
+MKT6878,29,Marketing,City,PG,Referral,8,86750,0,no
+MKT7303,43,Marketing,City,PG,On-Campus,0,65715,1,yes
+TECH1851,29,Technology,City,PG,Walk-in,9,29805,1,yes
+SAL2687,23,Sales,City,PG,Referral,5,24076,0,no
+PUR7833,39,Purchasing,City,UG,Recruitment Agency,8,86750,1,yes
+HR3427,31,HR,Suburb,PG,Referral,0,65715,1,yes
+SAL5000,52,Sales,Suburb,PG,Recruitment Agency,3,65715,1,yes
+MKT6052,43,Marketing,Suburb,PG,Recruitment Agency,3,29805,0,no
+SAL3738,35,Sales,City,PG,On-Campus,8,86750,1,yes
+PUR6732,43,Purchasing,Suburb,PG,Walk-in,4,65715,0,no
+HR6387,41,HR,City,UG,Referral,4,24076,1,yes
+HR9002,43,HR,City,PG,On-Campus,5,29805,1,yes
+PUR6536,41,Purchasing,City,UG,Referral,0,86750,1,yes
+PUR4913,47,Purchasing,City,UG,Recruitment Agency,0,29805,1,yes
+MKT2066,47,Marketing,Suburb,UG,Walk-in,8,24076,0,no
+HR8723,44,HR,City,UG,Referral,2,86750,0,no
+SAL5380,53,Sales,Suburb,PG,Referral,3,29805,1,yes
+TECH5107,39,Technology,City,UG,Recruitment Agency,0,42419,1,yes
+TECH6726,45,Technology,Suburb,UG,Referral,8,24076,1,yes
+PUR4373,45,Purchasing,Suburb,PG,Referral,7,24076,1,yes
+MKT9945,54,Marketing,Suburb,PG,Recruitment Agency,1,24076,1,yes
+TECH3082,52,Technology,Suburb,PG,On-Campus,7,42419,1,yes
+HR9967,32,HR,Suburb,UG,Recruitment Agency,6,42419,1,yes
+PUR7748,32,Purchasing,Suburb,PG,On-Campus,5,65715,1,yes
+SAL1417,26,Sales,City,PG,Walk-in,0,29805,0,no
+PUR9306,30,Purchasing,Suburb,UG,On-Campus,6,65715,0,no
+SAL9808,44,Sales,City,PG,On-Campus,9,29805,0,no
+PUR4974,42,Purchasing,Suburb,PG,Walk-in,6,42419,1,yes
+PUR4267,42,Purchasing,City,PG,On-Campus,8,42419,1,yes
+PUR1825,54,Purchasing,Suburb,PG,Recruitment Agency,0,65715,1,yes
+SAL8668,40,Sales,Suburb,UG,On-Campus,1,86750,0,no
+SAL6745,36,Sales,City,PG,Walk-in,8,65715,1,yes
+PUR1412,40,Purchasing,Suburb,PG,Recruitment Agency,8,29805,0,no
+TECH8543,50,Technology,Suburb,UG,Walk-in,5,65715,1,yes
+MKT8587,36,Marketing,Suburb,PG,Walk-in,5,24076,0,no
+MKT1728,42,Marketing,City,UG,Referral,3,29805,0,no
+MKT8164,43,Marketing,Suburb,PG,Referral,3,29805,0,no
+SAL9867,46,Sales,City,UG,Walk-in,4,86750,1,yes
+SAL6988,37,Sales,Suburb,UG,Walk-in,2,42419,0,no
+TECH3504,44,Technology,Suburb,UG,Walk-in,0,29805,1,yes
+MKT3967,52,Marketing,City,UG,Referral,0,42419,1,yes
+MKT3786,53,Marketing,Suburb,PG,Referral,6,65715,1,yes
+PUR2122,26,Purchasing,Suburb,UG,On-Campus,0,24076,1,yes
+SAL5079,35,Sales,City,PG,On-Campus,0,86750,1,yes
+MKT2571,49,Marketing,Suburb,UG,Walk-in,2,42419,0,no
+TECH6073,45,Technology,City,UG,Recruitment Agency,9,29805,1,yes
+TECH6104,30,Technology,City,UG,Recruitment Agency,3,42419,1,yes
+MKT3143,40,Marketing,City,PG,Referral,3,29805,1,yes
+SAL7806,34,Sales,Suburb,UG,Referral,1,42419,1,yes
+TECH8357,45,Technology,City,PG,Referral,0,29805,1,yes
+PUR4440,53,Purchasing,City,PG,Walk-in,2,65715,0,no
+TECH4766,36,Technology,Suburb,PG,Recruitment Agency,3,29805,0,no
+HR6644,24,HR,City,PG,On-Campus,2,29805,1,yes
+HR3914,40,HR,Suburb,PG,Walk-in,7,24076,0,no
+SAL5968,46,Sales,Suburb,PG,On-Campus,9,29805,0,no
+MKT6917,24,Marketing,Suburb,PG,On-Campus,0,24076,1,yes
+SAL9787,53,Sales,Suburb,PG,Walk-in,1,86750,0,no
+SAL1728,33,Sales,City,PG,On-Campus,6,24076,1,yes
+SAL2365,31,Sales,City,UG,Recruitment Agency,3,65715,0,no
+SAL5492,34,Sales,City,UG,On-Campus,7,24076,0,no
+PUR1698,39,Purchasing,City,UG,Recruitment Agency,2,86750,0,no
+PUR8186,37,Purchasing,City,UG,Recruitment Agency,5,65715,1,yes
+TECH1395,47,Technology,Suburb,UG,Recruitment Agency,8,42419,0,no
+HR8400,53,HR,City,PG,Referral,0,42419,0,no
+SAL9082,39,Sales,City,PG,On-Campus,0,24076,1,yes
+TECH5171,48,Technology,City,PG,Walk-in,7,24076,1,yes
+HR5360,51,HR,Suburb,PG,Walk-in,2,86750,0,no
+MKT3502,48,Marketing,Suburb,PG,On-Campus,4,86750,1,yes
+PUR1717,40,Purchasing,City,PG,Referral,0,29805,0,no
+HR3782,54,HR,Suburb,PG,Referral,4,86750,0,no
+MKT5946,44,Marketing,City,UG,Recruitment Agency,5,29805,1,yes
+HR6486,28,HR,City,UG,On-Campus,7,65715,1,yes
+PUR9335,39,Purchasing,Suburb,UG,On-Campus,2,24076,1,yes
+PUR5980,45,Purchasing,Suburb,UG,Walk-in,2,65715,0,no
+TECH8266,46,Technology,City,PG,On-Campus,9,86750,1,yes
+SAL5491,40,Sales,City,PG,Referral,8,65715,0,no
+HR8192,30,HR,Suburb,PG,On-Campus,3,65715,1,yes
+HR6588,31,HR,City,UG,Walk-in,3,65715,0,no
+MKT8651,28,Marketing,Suburb,PG,Recruitment Agency,6,86750,1,yes
+PUR4636,27,Purchasing,City,PG,Walk-in,1,65715,0,no
+HR2167,34,HR,Suburb,PG,Walk-in,7,29805,1,yes
+PUR2062,47,Purchasing,City,UG,Recruitment Agency,5,86750,0,no
+HR3156,54,HR,City,PG,Walk-in,2,65715,1,yes
+TECH8860,51,Technology,Suburb,UG,Walk-in,8,86750,1,yes
+SAL6161,50,Sales,City,UG,On-Campus,4,42419,0,no
+HR6305,33,HR,City,UG,On-Campus,7,29805,1,yes
+PUR7541,47,Purchasing,Suburb,UG,Recruitment Agency,6,65715,0,no
+TECH5729,23,Technology,City,PG,On-Campus,7,42419,0,no
+HR8330,33,HR,City,UG,On-Campus,6,42419,1,yes
+MKT6334,41,Marketing,City,UG,Walk-in,2,86750,0,no
+SAL9924,31,Sales,Suburb,PG,Referral,1,42419,1,yes
+HR5330,49,HR,Suburb,PG,On-Campus,6,29805,1,yes
+TECH9010,24,Technology,Suburb,UG,Referral,2,29805,0,no
+MKT7801,34,Marketing,City,PG,On-Campus,2,24076,1,yes
+TECH5846,26,Technology,City,UG,On-Campus,1,29805,0,no
+TECH7731,26,Technology,City,UG,Recruitment Agency,3,42419,0,no
